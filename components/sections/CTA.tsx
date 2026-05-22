@@ -64,13 +64,13 @@ export default function CTA() {
   return (
     <section
       ref={containerRef}
-      className="relative w-full min-h-screen bg-bg-primary overflow-hidden select-none bg-grain flex flex-col justify-center items-center text-center py-24 md:py-32"
+      className="relative w-full min-h-screen bg-bg-primary overflow-hidden select-none bg-grain flex flex-col justify-between items-center text-center pt-24 md:pt-32 pb-8 md:pb-12"
     >
       {/* Upper-Right Radial Red Light Leak */}
       <div className="absolute -top-[200px] -right-[200px] w-[800px] h-[800px] bg-[radial-gradient(circle_at_center,var(--accent-red-glow)_0%,transparent_70%)] opacity-30 blur-[96px] pointer-events-none z-0" />
 
       {/* Foreground Content */}
-      <div className="relative z-10 flex flex-col items-center justify-center px-4 w-full max-w-4xl">
+      <div className="relative z-10 flex-1 flex flex-col items-center justify-center px-4 w-full max-w-4xl mt-8">
         
         {/* Top Label */}
         <div className="cta-label mb-10 md:mb-14">
@@ -113,7 +113,7 @@ export default function CTA() {
       </div>
 
       {/* Footer Block */}
-      <div className="cta-footer absolute bottom-8 md:bottom-12 left-1/2 -translate-x-1/2 flex flex-col items-center w-full max-w-[600px] px-6 z-20">
+      <div className="cta-footer relative flex flex-col items-center w-full max-w-[600px] px-6 z-20 mt-12">
         
         {/* Disclaimer */}
         <p className="font-mono text-[10px] md:text-[11px] tracking-[0.2em] text-text-muted uppercase text-center leading-relaxed mb-4">
