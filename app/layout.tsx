@@ -70,7 +70,7 @@ export default function RootLayout({
   return (
     <html lang="en" className="scroll-smooth">
       <body
-        className={`${syne.variable} ${fraunces.variable} ${dmMono.variable} antialiased bg-bg-primary text-text-primary selection:bg-accent-red selection:text-bg-primary`}
+        className={`${syne.variable} ${fraunces.variable} ${dmMono.variable} antialiased bg-bg-primary text-text-primary selection:bg-accent-red selection:text-bg-primary overflow-x-hidden`}
       >
         <CartProvider>
           <ScrollProgress />

@@ -28,7 +28,7 @@ export default function ProductClientPage({ product, relatedProducts }: ProductC
   useEffect(() => {
     setSelectedColor(product.colors[0]);
     setDisplayImage(product.colors[0]?.image || product.image);
-  }, [product.slug]);
+  }, [product.slug, product.colors, product.image]);
 
   // GSAP animation references
   const containerRef = useRef<HTMLDivElement>(null);
